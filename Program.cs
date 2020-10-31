@@ -143,6 +143,8 @@ namespace Step_Homework_3
                 else
                 {
                     Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
+                    Console.Write("Дозапрака с B на С: ");
+                    Console.Write(Fuel_quantity_required - Fuel_quantity_required_AB);
                 }
             }
             else if (Cargo_Weight <= 1000)
@@ -157,6 +159,8 @@ namespace Step_Homework_3
                 else
                 {
                     Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
+                    Console.Write("Дозапрака с B на С: ");
+                    Console.Write(Fuel_quantity_required - Fuel_quantity_required_AB);
                 }
             }
             else if (Cargo_Weight <= 1500)
@@ -171,6 +175,8 @@ namespace Step_Homework_3
                 else
                 {
                     Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
+                    Console.Write("Дозапрака с B на С: ");
+                    Console.Write(Fuel_quantity_required - Fuel_quantity_required_AB);
                 }
             }
             else if (Cargo_Weight <= 2000)
@@ -185,6 +191,8 @@ namespace Step_Homework_3
                 else
                 {
                     Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
+                    Console.Write("Дозапрака с B на С: ");
+                    Console.Write(Fuel_quantity_required - Fuel_quantity_required_AB);
                 }
             }
             else
