@@ -108,6 +108,90 @@ namespace Step_Homework_3
             int max_numb = A.Max();
             Console.WriteLine("Самое большое число - " + max_numb);
             Console.ReadKey();*/
+
+
+            /*Задание 4: Грузовой самолет должен пролететь с грузом из пункта А в пункт С через пункт В.
+            Емкость бака для топлива у самолета – 300 литров. Потребление топлива на 1 км в зависимости
+            от веса груза у самолета следующее:
+            - до 500 кг: 1 литров / км
+            - до 1000 кг: 4 литров / км
+            - до 1500 кг: 7 литров / км
+            - до 2000 кг: 9 литров / км.
+            - более 2000 кг – самолет не поднимает.
+            Пользователь вводит расстояние между пунктами А и В, и расстояние между пунктами В и С, а
+            также вес груза. Программа должна рассчитать какое минимальное количество топлива
+            необходимо для дозаправки самолету в пункте В, чтобы долететь из пункта А в пункт С. В
+            случае невозможности преодолеть любое из расстояний – программа должна вывести
+            сообщение о невозможности полета по введенному маршруту.*/
+
+            Console.Write("Введите A-B: ");
+            int AB = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите B-C: ");
+            int BC = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите кг. груза: ");
+            int Cargo_Weight = Convert.ToInt32(Console.ReadLine());
+
+            if (Cargo_Weight <= 500)
+            {
+                int Fuel_quantity_required_AB = AB / Cargo_Weight;
+                int Fuel_quantity_required_BC = BC / Cargo_Weight;
+                int Fuel_quantity_required = Fuel_quantity_required_AB + Fuel_quantity_required_BC;
+                if (Fuel_quantity_required > 300)
+                {
+                    Console.WriteLine("Самолёт не взлетит.");
+                }
+                else
+                {
+                    Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
+                }
+            }
+            else if (Cargo_Weight <= 1000)
+            {
+                int Fuel_quantity_required_AB = AB / Cargo_Weight;
+                int Fuel_quantity_required_BC = BC / Cargo_Weight;
+                int Fuel_quantity_required = Fuel_quantity_required_AB + Fuel_quantity_required_BC;
+                if (Fuel_quantity_required > 300)
+                {
+                    Console.WriteLine("Самолёт не взлетит.");
+                }
+                else
+                {
+                    Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
+                }
+            }
+            else if (Cargo_Weight <= 1500)
+            {
+                int Fuel_quantity_required_AB = AB / Cargo_Weight;
+                int Fuel_quantity_required_BC = BC / Cargo_Weight;
+                int Fuel_quantity_required = Fuel_quantity_required_AB + Fuel_quantity_required_BC;
+                if (Fuel_quantity_required > 300)
+                {
+                    Console.WriteLine("Самолёт не взлетит.");
+                }
+                else
+                {
+                    Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
+                }
+            }
+            else if (Cargo_Weight <= 2000)
+            {
+                int Fuel_quantity_required_AB = AB / Cargo_Weight;
+                int Fuel_quantity_required_BC = BC / Cargo_Weight;
+                int Fuel_quantity_required = Fuel_quantity_required_AB + Fuel_quantity_required_BC;
+                if (Fuel_quantity_required > 300)
+                {
+                    Console.WriteLine("Самолёт не взлетит.");
+                }
+                else
+                {
+                    Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Самолёт не поднимает");
+            }
+            Console.ReadKey();
         }
     }
 }
