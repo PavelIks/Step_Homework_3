@@ -133,67 +133,103 @@ namespace Step_Homework_3
 
             if (Cargo_Weight <= 500)
             {
-                int Fuel_quantity_required_AB = AB / Cargo_Weight;
-                int Fuel_quantity_required_BC = BC / Cargo_Weight;
-                int Fuel_quantity_required = Fuel_quantity_required_AB + Fuel_quantity_required_BC;
-                if (Fuel_quantity_required > 300)
+                int Fuel_quantity_required_AB = AB * 1;
+                if (Fuel_quantity_required_AB < 300)
                 {
-                    Console.WriteLine("Самолёт не взлетит.");
+                    Console.WriteLine("Самолёт долетит до B (" + Fuel_quantity_required_AB + " л. топлива нужно).");
                 }
                 else
                 {
-                    Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
-                    Console.Write("Дозапрака с B на С: ");
-                    Console.Write(Fuel_quantity_required - Fuel_quantity_required_AB);
+                    Console.WriteLine("Самолёт не долетит до B (" + Fuel_quantity_required_AB + " л. топлива нужно - лимит превышен).");
+                    Console.WriteLine("Ёмкость топливного бака самолёта - 300 л.");
                 }
+                int Fuel_quantity_required_BC = BC * 1;
+                if (Fuel_quantity_required_BC < 300)
+                {
+                    Console.WriteLine("Самолёт долетит до C (" + Fuel_quantity_required_BC + " л. топлива нужно).");
+                }
+                else
+                {
+                    Console.WriteLine("Самолёт не долетит до C (" + Fuel_quantity_required_BC + " л. топлива нужно - лимит превышен).");
+                    Console.WriteLine("Ёмкость топливного бака самолёта - 300 л.");
+                }
+                int x = Fuel_quantity_required_BC + Fuel_quantity_required_AB;
+                Console.WriteLine("Самолёту нужно " + x + " л. топлива.");
             }
-            else if (Cargo_Weight <= 1000)
+            else if(Cargo_Weight <= 1000)
             {
-                int Fuel_quantity_required_AB = AB / Cargo_Weight;
-                int Fuel_quantity_required_BC = BC / Cargo_Weight;
-                int Fuel_quantity_required = Fuel_quantity_required_AB + Fuel_quantity_required_BC;
-                if (Fuel_quantity_required > 300)
+                int Fuel_quantity_required_AB = AB * 4;
+                if (Fuel_quantity_required_AB < 300)
                 {
-                    Console.WriteLine("Самолёт не взлетит.");
+                    Console.WriteLine("Самолёт долетит до B (" + Fuel_quantity_required_AB + " л. топлива нужно).");
                 }
                 else
                 {
-                    Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
-                    Console.Write("Дозапрака с B на С: ");
-                    Console.Write(Fuel_quantity_required - Fuel_quantity_required_AB);
+                    Console.WriteLine("Самолёт не долетит до B (" + Fuel_quantity_required_AB + " л. топлива нужно - лимит превышен).");
+                    Console.WriteLine("Ёмкость топливного бака самолёта - 300 л.");
                 }
+                int Fuel_quantity_required_BC = BC * 4;
+                if (Fuel_quantity_required_BC < 300)
+                {
+                    Console.WriteLine("Самолёт долетит до C (" + Fuel_quantity_required_BC + " л. топлива нужно).");
+                }
+                else
+                {
+                    Console.WriteLine("Самолёт не долетит до C (" + Fuel_quantity_required_BC + " л. топлива нужно - лимит превышен).");
+                    Console.WriteLine("Ёмкость топливного бака самолёта - 300 л.");
+                }
+                int x = Fuel_quantity_required_BC + Fuel_quantity_required_AB;
+                Console.WriteLine("Самолёту нужно " + x + " л. топлива.");
             }
             else if (Cargo_Weight <= 1500)
             {
-                int Fuel_quantity_required_AB = AB / Cargo_Weight;
-                int Fuel_quantity_required_BC = BC / Cargo_Weight;
-                int Fuel_quantity_required = Fuel_quantity_required_AB + Fuel_quantity_required_BC;
-                if (Fuel_quantity_required > 300)
+                int Fuel_quantity_required_AB = AB * 7;
+                if (Fuel_quantity_required_AB < 300)
                 {
-                    Console.WriteLine("Самолёт не взлетит.");
+                    Console.WriteLine("Самолёт долетит до B (" + Fuel_quantity_required_AB + " л. топлива нужно).");
                 }
                 else
                 {
-                    Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
-                    Console.Write("Дозапрака с B на С: ");
-                    Console.Write(Fuel_quantity_required - Fuel_quantity_required_AB);
+                    Console.WriteLine("Самолёт не долетит до B (" + Fuel_quantity_required_AB + " л. топлива нужно - лимит превышен).");
+                    Console.WriteLine("Ёмкость топливного бака самолёта - 300 л.");
                 }
+                int Fuel_quantity_required_BC = BC * 7;
+                if (Fuel_quantity_required_BC < 300)
+                {
+                    Console.WriteLine("Самолёт долетит до C (" + Fuel_quantity_required_BC + " л. топлива нужно).");
+                }
+                else
+                {
+                    Console.WriteLine("Самолёт не долетит до C (" + Fuel_quantity_required_BC + " л. топлива нужно - лимит превышен).");
+                    Console.WriteLine("Ёмкость топливного бака самолёта - 300 л.");
+                }
+                int x = Fuel_quantity_required_BC + Fuel_quantity_required_AB;
+                Console.WriteLine("Самолёту нужно " + x + " л. топлива.");
             }
             else if (Cargo_Weight <= 2000)
             {
-                int Fuel_quantity_required_AB = AB / Cargo_Weight;
-                int Fuel_quantity_required_BC = BC / Cargo_Weight;
-                int Fuel_quantity_required = Fuel_quantity_required_AB + Fuel_quantity_required_BC;
-                if (Fuel_quantity_required > 300)
+                int Fuel_quantity_required_AB = AB * 9;
+                if (Fuel_quantity_required_AB < 300)
                 {
-                    Console.WriteLine("Самолёт не взлетит.");
+                    Console.WriteLine("Самолёт долетит до B (" + Fuel_quantity_required_AB + " л. топлива нужно).");
                 }
                 else
                 {
-                    Console.WriteLine("Необходимо л топлива: " + Fuel_quantity_required);
-                    Console.Write("Дозапрака с B на С: ");
-                    Console.Write(Fuel_quantity_required - Fuel_quantity_required_AB);
+                    Console.WriteLine("Самолёт не долетит до B (" + Fuel_quantity_required_AB + " л. топлива нужно - лимит превышен).");
+                    Console.WriteLine("Ёмкость топливного бака самолёта - 300 л.");
                 }
+                int Fuel_quantity_required_BC = BC * 9;
+                if (Fuel_quantity_required_BC < 300)
+                {
+                    Console.WriteLine("Самолёт долетит до C (" + Fuel_quantity_required_BC + " л. топлива нужно).");
+                }
+                else
+                {
+                    Console.WriteLine("Самолёт не долетит до C (" + Fuel_quantity_required_BC + " л. топлива нужно - лимит превышен).");
+                    Console.WriteLine("Ёмкость топливного бака самолёта - 300 л.");
+                }
+                int x = Fuel_quantity_required_BC + Fuel_quantity_required_AB;
+                Console.WriteLine("Самолёту нужно " + x + " л. топлива.");
             }
             else
             {
