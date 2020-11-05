@@ -124,13 +124,12 @@ namespace Step_Homework_3
             случае невозможности преодолеть любое из расстояний – программа должна вывести
             сообщение о невозможности полета по введенному маршруту.*/
 
-            Console.Write("Введите A-B: ");
+            /*Console.Write("Введите A-B: ");
             int AB = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите B-C: ");
             int BC = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите кг. груза: ");
             int Cargo_Weight = Convert.ToInt32(Console.ReadLine());
-
             if (Cargo_Weight <= 500)
             {
                 int Fuel_quantity_required_AB = AB * 1;
@@ -235,7 +234,206 @@ namespace Step_Homework_3
             {
                 Console.WriteLine("Самолёт не поднимает");
             }
-            Console.ReadKey();
+            Console.ReadKey();*/
+
+
+
+            /*Встреча №8*/
+            /*Задание 1: Пользователь вводит две даты (день, месяц, год в виде целых чисел). Необходимо
+            определить и вывести количество дней между этими двумя датами. Для расчетов учитывать
+            високосные года, а также корректное число дней в месяцах (март – 31, сентябрь – 30, февраль
+            не високосного года – 28 и т.д.)*/
+
+            Console.Write("Введите 1-ю дату - день: ");
+            int D1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите 1-ю дату - месяц: ");
+            int D2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите 1-ю дату - год: ");
+            int D3 = Convert.ToInt32(Console.ReadLine());
+            if(D2 > 12)
+            {
+                Console.WriteLine("Месяцев менее 12!");
+            }
+            if (D2 == 1)
+            {
+                int M1 = 31;
+                if(D1 > M1)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 2)
+            {
+                int M2 = 29;
+                if (D1 > M2)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 3)
+            {
+                int M3 = 31;
+                if (D1 > M3)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 4)
+            {
+                int M4 = 31;
+                if (D1 > M4)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 5)
+            {
+                int M5 = 31;
+                if (D1 > M5)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 6)
+            {
+                int M6 = 30;
+                if (D1 > M6)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 7)
+            {
+                int M7 = 31;
+                if (D1 > M7)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 8)
+            {
+                int M8 = 30;
+                if (D1 > M8)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 9)
+            {
+                int M9 = 31;
+                if (D1 > M9)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 10)
+            {
+                int M10 = 31;
+                if (D1 > M10)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 11)
+            {
+                int M11 = 30;
+                if (D1 > M11)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
+            else if (D2 == 12)
+            {
+                int M12 = 31;
+                if (D1 > M12)
+                {
+                    Console.WriteLine("Достигнут лимит дней!");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    D3 = D3 * 365;
+                    Console.WriteLine(D1 + D3);
+                    Console.ReadKey();
+                }
+            }
         }
     }
 }
