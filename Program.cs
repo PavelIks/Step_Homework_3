@@ -284,7 +284,7 @@ namespace Step_Homework_3
             }
             else if (w_month_1 == 2 || w_month_2 > 2)
             {
-                int month_2 = 29;
+                int month_2 = 28;
                 if (w_day_1 > month_2 || w_day_2 > month_2)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
