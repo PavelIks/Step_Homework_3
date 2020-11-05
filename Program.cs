@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Step_Homework_3
 {
@@ -237,7 +238,6 @@ namespace Step_Homework_3
             Console.ReadKey();*/
 
 
-
             /*Встреча №8*/
             /*Задание 1: Пользователь вводит две даты (день, месяц, год в виде целых чисел). Необходимо
             определить и вывести количество дней между этими двумя датами. Для расчетов учитывать
@@ -245,192 +245,260 @@ namespace Step_Homework_3
             не високосного года – 28 и т.д.)*/
 
             Console.Write("Введите 1-ю дату - день: ");
-            int D1 = Convert.ToInt32(Console.ReadLine());
+            int w_day_1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите 1-ю дату - месяц: ");
-            int D2 = Convert.ToInt32(Console.ReadLine());
+            int w_month_1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите 1-ю дату - год: ");
-            int D3 = Convert.ToInt32(Console.ReadLine());
-            if(D2 > 12)
+            int w_year_1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Введите 2-ю дату - день: ");
+            int w_day_2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите 2-ю дату - месяц: ");
+            int w_month_2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите 2-ю дату - год: ");
+            int w_year_2 = Convert.ToInt32(Console.ReadLine());
+
+            if (w_month_1 > 12 || w_month_2 > 12)
             {
                 Console.WriteLine("Месяцев менее 12!");
             }
-            if (D2 == 1)
+            else if (w_month_1 == 1 || w_month_2 > 1)
             {
-                int M1 = 31;
-                if(D1 > M1)
+                int month_1 = 31;
+                if(w_day_1 > month_1 || w_day_2 > month_1)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 2)
+            else if (w_month_1 == 2 || w_month_2 > 2)
             {
-                int M2 = 29;
-                if (D1 > M2)
+                int month_2 = 29;
+                if (w_day_1 > month_2 || w_day_2 > month_2)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 3)
+            else if (w_month_1 == 3 || w_month_2 > 3)
             {
-                int M3 = 31;
-                if (D1 > M3)
+                int month_3 = 31;
+                if (w_day_1 > month_3 || w_day_2 > month_3)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 4)
+            else if (w_month_1 == 4 || w_month_2 > 4)
             {
-                int M4 = 31;
-                if (D1 > M4)
+                int month_4 = 31;
+                if (w_day_1 > month_4 || w_day_2 > month_4)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 5)
+            else if (w_month_1 == 5 || w_month_2 > 5)
             {
-                int M5 = 31;
-                if (D1 > M5)
+                int month_5 = 31;
+                if (w_day_1 > month_5 || w_day_2 > month_5)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 6)
+            else if (w_month_1 == 6 || w_month_2 > 6)
             {
-                int M6 = 30;
-                if (D1 > M6)
+                int month_6 = 30;
+                if (w_day_1 > month_6 || w_day_2 > month_6)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 7)
+            else if (w_month_1 == 7 || w_month_2 > 7)
             {
-                int M7 = 31;
-                if (D1 > M7)
+                int month_7 = 31;
+                if (w_day_1 > month_7 || w_day_2 > month_7)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 8)
+            else if (w_month_1 == 8 || w_month_2 > 8)
             {
-                int M8 = 30;
-                if (D1 > M8)
+                int month_8 = 30;
+                if (w_day_1 > month_8 || w_day_2 > month_8)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 9)
+            else if (w_month_1 == 9 || w_month_2 > 9)
             {
-                int M9 = 31;
-                if (D1 > M9)
+                int month_9 = 31;
+                if (w_day_1 > month_9 || w_day_2 > month_9)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 10)
+            else if (w_month_1 == 10 || w_month_2 > 10)
             {
-                int M10 = 31;
-                if (D1 > M10)
+                int month_10 = 31;
+                if (w_day_1 > month_10 || w_day_2 > month_10)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 11)
+            else if (w_month_1 == 11 || w_month_2 > 11)
             {
-                int M11 = 30;
-                if (D1 > M11)
+                int month_11 = 30;
+                if (w_day_1 > month_11 || w_day_2 > month_11)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
-            else if (D2 == 12)
+            else if (w_month_1 == 12 || w_month_2 > 12)
             {
-                int M12 = 31;
-                if (D1 > M12)
+                int month_12 = 31;
+                if (w_day_1 > month_12 || w_day_2 > month_12)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
                 }
                 else
                 {
-                    D3 = D3 * 365;
-                    Console.WriteLine(D1 + D3);
+                    w_year_1 = w_year_1 * 365;
+                    w_year_2 = w_year_2 * 365;
+
+                    int date1 = w_day_1 + w_year_1;
+                    int date2 = w_day_2 + w_year_2;
+
+                    Console.WriteLine(date1 - date2);
                     Console.ReadKey();
                 }
             }
