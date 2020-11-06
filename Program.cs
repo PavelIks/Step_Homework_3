@@ -297,11 +297,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -317,11 +316,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -337,11 +335,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -357,11 +354,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -377,11 +373,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -397,11 +392,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -417,11 +411,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -437,11 +430,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -457,11 +449,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -477,11 +468,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
@@ -497,11 +487,10 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
