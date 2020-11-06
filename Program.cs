@@ -258,14 +258,18 @@ namespace Step_Homework_3
             Console.Write("Введите 2-ю дату - год: ");
             int w_year_2 = Convert.ToInt32(Console.ReadLine());
 
+            int a1 = w_year_1 / 4 - w_year_1 / 100 + w_year_1 / 400;
+            int a2 = w_year_2 / 4 - w_year_2 / 100 + w_year_2 / 400;
+            int a = a1 - a2;
+
             if (w_month_1 > 12 || w_month_2 > 12)
             {
                 Console.WriteLine("Месяцев менее 12!");
             }
-            else if (w_month_1 == 1 || w_month_2 > 1)
+            else if (w_month_1 == 1 || w_month_2 == 1)
             {
                 int month_1 = 31;
-                if(w_day_1 > month_1 || w_day_2 > month_1)
+                if (w_day_1 > month_1 || w_day_2 > month_1)
                 {
                     Console.WriteLine("Достигнут лимит дней!");
                     Console.ReadKey();
@@ -274,15 +278,14 @@ namespace Step_Homework_3
                 {
                     w_year_1 = w_year_1 * 365;
                     w_year_2 = w_year_2 * 365;
-
                     int date1 = w_day_1 + w_year_1;
                     int date2 = w_day_2 + w_year_2;
-
-                    Console.WriteLine(date1 - date2);
+                    int date = date1 - date2;
+                    Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 2 || w_month_2 > 2)
+            else if (w_month_1 == 2 || w_month_2 == 2)
             {
                 int month_2 = 28;
                 if (w_day_1 > month_2 || w_day_2 > month_2)
@@ -302,7 +305,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 3 || w_month_2 > 3)
+            else if (w_month_1 == 3 || w_month_2 == 3)
             {
                 int month_3 = 31;
                 if (w_day_1 > month_3 || w_day_2 > month_3)
@@ -322,7 +325,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 4 || w_month_2 > 4)
+            else if (w_month_1 == 4 || w_month_2 == 4)
             {
                 int month_4 = 31;
                 if (w_day_1 > month_4 || w_day_2 > month_4)
@@ -342,7 +345,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 5 || w_month_2 > 5)
+            else if (w_month_1 == 5 || w_month_2 == 5)
             {
                 int month_5 = 31;
                 if (w_day_1 > month_5 || w_day_2 > month_5)
@@ -362,7 +365,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 6 || w_month_2 > 6)
+            else if (w_month_1 == 6 || w_month_2 == 6)
             {
                 int month_6 = 30;
                 if (w_day_1 > month_6 || w_day_2 > month_6)
@@ -382,7 +385,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 7 || w_month_2 > 7)
+            else if (w_month_1 == 7 || w_month_2 == 7)
             {
                 int month_7 = 31;
                 if (w_day_1 > month_7 || w_day_2 > month_7)
@@ -402,7 +405,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 8 || w_month_2 > 8)
+            else if (w_month_1 == 8 || w_month_2 == 8)
             {
                 int month_8 = 30;
                 if (w_day_1 > month_8 || w_day_2 > month_8)
@@ -422,7 +425,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 9 || w_month_2 > 9)
+            else if (w_month_1 == 9 || w_month_2 == 9)
             {
                 int month_9 = 31;
                 if (w_day_1 > month_9 || w_day_2 > month_9)
@@ -442,7 +445,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 10 || w_month_2 > 10)
+            else if (w_month_1 == 10 || w_month_2 == 10)
             {
                 int month_10 = 31;
                 if (w_day_1 > month_10 || w_day_2 > month_10)
@@ -462,7 +465,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 11 || w_month_2 > 11)
+            else if (w_month_1 == 11 || w_month_2 == 11)
             {
                 int month_11 = 30;
                 if (w_day_1 > month_11 || w_day_2 > month_11)
@@ -482,7 +485,7 @@ namespace Step_Homework_3
                     Console.ReadKey();
                 }
             }
-            else if (w_month_1 == 12 || w_month_2 > 12)
+            else if (w_month_1 == 12 || w_month_2 == 12)
             {
                 int month_12 = 31;
                 if (w_day_1 > month_12 || w_day_2 > month_12)
