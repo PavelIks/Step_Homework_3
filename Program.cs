@@ -244,7 +244,7 @@ namespace Step_Homework_3
             високосные года, а также корректное число дней в месяцах (март – 31, сентябрь – 30, февраль
             не високосного года – 28 и т.д.)*/
 
-            Console.Write("Введите 1-ю дату - день: ");
+            /*Console.Write("Введите 1-ю дату - день: ");
             int w_day_1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Введите 1-ю дату - месяц: ");
             int w_month_1 = Convert.ToInt32(Console.ReadLine());
@@ -493,7 +493,75 @@ namespace Step_Homework_3
                     Console.WriteLine(date + a);
                     Console.ReadKey();
                 }
+            }*/
+
+
+            /*Задание 2: Зарплата менеджера составляет 200$ + процент от продаж, продажи до 500$ - 3%, от
+            500 до 1000 – 5%, свыше 1000 – 8%. Пользователь вводит с клавиатуры уровень продаж для
+            трех менеджеров. Определить их зарплату, определить лучшего менеджера, начислить ему
+            премию 200$, вывести итоги на экран.*/
+
+            Console.Write("Введите уровень продаж 1-го менеджера: ");
+            int M1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите уровень продаж 2-го менеджера: ");
+            int M2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Введите уровень продаж 3-го менеджера: ");
+            int M3 = Convert.ToInt32(Console.ReadLine());
+
+            int zp = 200;
+
+            if (M1 <= 500)
+            {
+                Console.WriteLine(zp + (zp / 100 * 3));
             }
+            else if (M1 > 500 && M1 <= 1000)
+            {
+                Console.WriteLine(zp + (zp / 100 * 5));
+            }
+            else if (M1 > 1000)
+            {
+                Console.WriteLine(zp + (zp / 100 * 8));
+            }
+
+            if (M2 <= 500)
+            {
+                Console.WriteLine(zp + (zp / 100 * 3));
+            }
+            else if (M2 > 500 && M2 <= 1000)
+            {
+                Console.WriteLine(zp + (zp / 100 * 5));
+            }
+            else if (M2 > 1000)
+            {
+                Console.WriteLine(zp + (zp / 100 * 8));
+            }
+
+            if (M3 <= 500)
+            {
+                Console.WriteLine(zp + (zp / 100 * 3));
+            }
+            else if (M3 > 500 && M3 <= 1000)
+            {
+                Console.WriteLine(zp + (zp / 100 * 5));
+            }
+            else if (M3 > 1000)
+            {
+                Console.WriteLine(zp + (zp / 100 * 8));
+            }
+
+            if(M1 > M2 && M1 > M3)
+            {
+                Console.WriteLine("1-й менеджер победил!");
+            }
+            else if (M2 > M1 && M2 > M3)
+            {
+                Console.WriteLine("2-й менеджер победил!");
+            }
+            else if (M3 > M2 && M3 > M1)
+            {
+                Console.WriteLine("3-й менеджер победил!");
+            }
+            Console.ReadKey();
         }
     }
 }
